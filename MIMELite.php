@@ -210,7 +210,7 @@ class MIMELite  {
     function top_level($onoff) {
         if($onoff) {
             $this->attr('MIME-Version', '1.0');
-            $this->replace('X-Mailer', "Perl's MIME::Lite ported to PHP by Di_Moon.");
+            $this->replace('X-Mailer', "Perl's MIME::Lite ported to PHP by Di_Moon. https://github.com/dimoonster/MIMELite");
         } else {
             $this->attr('MIME-Version', 0);
             $this->delete('X-Mailer');
